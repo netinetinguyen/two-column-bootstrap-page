@@ -13,8 +13,6 @@ a.button {
   font-size: 1rem;
   padding: 0.9375em 1.875em;
   transition: 0.5s; /*transition on hover*/
-}
-a.button {
   margin-right: 1em;
   margin-bottom: 1em;
 }
