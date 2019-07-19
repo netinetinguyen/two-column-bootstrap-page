@@ -1,23 +1,55 @@
 .banner-cta {
   text-align: center;
 }
+.logo-container {
+  text-align: center;
+  padding: 1.25em 0; /*20px 0*/
+}
 a.button {
-  display: inline-block;
+  text-align: center;
   text-decoration: none;
   color: #000000;
   background-color: cornflowerblue;
   font-size: 1rem;
-  padding: 0.9375em 1.875em; /*15px 30px*/
+  padding: 0.9375em 1.875em;
   transition: 0.5s; /*transition on hover*/
+}
+a.button {
+  margin-right: 1em;
+  margin-bottom: 1em;
 }
 a.button:hover {
   background-color: pink;
 }
-#logo {
-  width: 100px;
-}
 @media screen and (min-width: 992px) {
   .banner > img {
     width: 100%;
+  }
+  .banner {
+    position: relative;
+  }
+  .banner-cta {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+  .banner-cta:after {
+    /*positions in relation to banner, since that is first position context with relative*/
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    /* background-color: rgba(0, 0, 0, 0.1); */
+    background-image: linear-gradient(180deg,transparent 0,transparent 50%,rgba(0,0,0,.75));
+    z-index: -1;
   }
 }
