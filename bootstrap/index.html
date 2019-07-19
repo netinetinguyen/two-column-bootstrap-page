@@ -13,62 +13,69 @@
   <title>Hello, world!</title>
 </head>
 
-<body>
+<body> 
 
   <header id="masthead">
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <img class="img-fluid" src="https://placehold.it/150x55" alt="logo things">
-        </div>
-      </div>
+    <div class="logo-container">
+      <h1>
+        <a href="/"><img class="img-fluid" src="https://placehold.it/150x55" alt="logo things"></a>
+      </h1>
     </div>
   </header>
 
   <main id="main" role="main">
 
     <div class="banner">
-      <img class="img-fluid" src="https://placehold.it/1600x400" alt="main banner image">
-      <div class="container banner-cta">
-        <div class="row justify-content-center">
+      <img class="img-fluid" src="https://placehold.it/1500x650" alt="main banner image">
+      <div class="container-fluid banner-cta">
+        <div class="row h-100 align-items-lg-end">
           <div class="col py-3 banner-cta-inner">
             <h1>Lorem ipsum dolor sit amet</h1>
             <p>Laborum quas itaque impedit quasi modi!</p>
-            <a href="#" class="button" role="button">
-              click me for something
-            </a>
+            <div class="button-container d-flex justify-content-center">
+              <a href="#" class="button" role="button">
+                click me for something
+              </a>
+            </div>
           </div>
         </div>        
       </div>
     </div>
 
     <section id="main-content">
-      <div class="container">
-        <div class="row mb-4">
-          <div class="col-sm-12 col-md-6 py-3">
-            <img class="img-fluid" src="https://placehold.it/600x400" alt="image">
+      <div class="edge-to-edge"> <!--getting rid of container class for edge to edge design-->
+        <div class="row no-gutters">
+          <div class="col-sm-12 col-md-6">
+            <img class="img-fluid" src="https://placehold.it/1000x900" alt="image">
           </div>
-          <div class="col-sm-12 col-md-6 py-3 d-flex align-items-center content">
+          <div class="col-sm-12 col-md-6 d-flex content">
             <div class="content-inner">
               <h2>Lorem ipsum dolor</h2>
               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo non nesciunt nihil perferendis, dolor perspiciatis commodi! Quam quis tempore perspiciatis ducimus, iure voluptatibus modi maxime rem aperiam autem cum sit!</p>
-              <a href="#" class="button" role="button">
-                click me for something
-              </a>
+              <div class="button-container d-flex">
+                <a href="#" class="button" role="button">
+                  click me for something
+                </a>
+              </div>
             </div>
           </div>
         </div>
-        <div class="row mb-4 flex-md-row-reverse">
-          <div class="col-sm-12 col-md-6 py-3">
-            <img class="img-fluid" src="https://placehold.it/600x400" alt="image">
+        <div class="row no-gutters flex-md-row-reverse">
+          <div class="col-sm-12 col-md-6">
+            <img class="img-fluid" src="https://placehold.it/1000x900" alt="image">
           </div>
-          <div class="col-sm-12 col-md-6 py-3 d-flex align-items-center content">
+          <div class="col-sm-12 col-md-6 d-flex content">
             <div class="content-inner">
               <h2>Lorem ipsum dolor</h2>
               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo non nesciunt nihil perferendis, dolor perspiciatis commodi! Quam quis tempore perspiciatis ducimus, iure voluptatibus modi maxime rem aperiam autem cum sit!</p>
-              <a href="#" class="button" role="button">
-                click me for something
-              </a>
+              <div class="button-container d-flex">
+                <a href="#" class="button" role="button">
+                  click me for something
+                </a>
+                <a href="#" class="button" role="button">
+                  click me for something
+                </a>                
+              </div>
             </div>
           </div>
         </div>
@@ -78,11 +85,13 @@
   </main>
 
   <footer id="main-footer">
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <img class="img-fluid" src="https://placehold.it/150x55" alt="logo things">
-        </div>        
+    <div class="#">
+      <div class="#">
+        <div class="logo-container">
+          <h1>
+            <a href="/"><img class="img-fluid" src="https://placehold.it/150x55" alt="logo things"></a>
+          </h1>
+        </div>
       </div>
     </div>
   </footer>
